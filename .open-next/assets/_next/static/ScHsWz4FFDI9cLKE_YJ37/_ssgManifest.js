@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fapi\u002Fprefetch-images\u002F[...rest]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

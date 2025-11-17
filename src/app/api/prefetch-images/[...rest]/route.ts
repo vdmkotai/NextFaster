@@ -4,10 +4,6 @@ import { parseHTML } from "linkedom";
 export const dynamic = "force-static";
 
 function getHostname(request: NextRequest) {
-  if (process.env.NODE_ENV === "development") {
-    return "localhost:3000";
-  }
-
   // Vercel-specific (check first for guaranteed Vercel compatibility)
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     return process.env.VERCEL_PROJECT_PRODUCTION_URL;
@@ -21,7 +17,12 @@ function getHostname(request: NextRequest) {
     return process.env.RAILWAY_PUBLIC_DOMAIN;
   }
 
-  // Universal fallback: get from request headers (works everywhere!)
+  if (process.env.API_HOST) {
+    return process.env.API_HOST;
+  }
+
+  // Universal fallback: get from request headers
+  // Works for CloudFlare Workers, local dev, and other platforms
   return request.headers.get("host") || "";
 }
 

@@ -1,0 +1,181 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/prefetch-images/[...rest]",
+      "regex": "^/api/prefetch\\-images/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPrest": "nxtPrest"
+      },
+      "namedRegex": "^/api/prefetch\\-images/(?<nxtPrest>.+?)(?:/)?$"
+    },
+    {
+      "page": "/products/[category]",
+      "regex": "^/products/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/products/[category]/opengraph-image-1kbeev",
+      "regex": "^/products/([^/]+?)/opengraph\\-image\\-1kbeev(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)/opengraph\\-image\\-1kbeev(?:/)?$"
+    },
+    {
+      "page": "/products/[category]/[subcategory]",
+      "regex": "^/products/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtPsubcategory": "nxtPsubcategory"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)/(?<nxtPsubcategory>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/products/[category]/[subcategory]/opengraph-image-b3umn5",
+      "regex": "^/products/([^/]+?)/([^/]+?)/opengraph\\-image\\-b3umn5(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtPsubcategory": "nxtPsubcategory"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)/(?<nxtPsubcategory>[^/]+?)/opengraph\\-image\\-b3umn5(?:/)?$"
+    },
+    {
+      "page": "/products/[category]/[subcategory]/[product]",
+      "regex": "^/products/([^/]+?)/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtPsubcategory": "nxtPsubcategory",
+        "nxtPproduct": "nxtPproduct"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)/(?<nxtPsubcategory>[^/]+?)/(?<nxtPproduct>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/products/[category]/[subcategory]/[product]/opengraph-image-154diq",
+      "regex": "^/products/([^/]+?)/([^/]+?)/([^/]+?)/opengraph\\-image\\-154diq(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtPsubcategory": "nxtPsubcategory",
+        "nxtPproduct": "nxtPproduct"
+      },
+      "namedRegex": "^/products/(?<nxtPcategory>[^/]+?)/(?<nxtPsubcategory>[^/]+?)/(?<nxtPproduct>[^/]+?)/opengraph\\-image\\-154diq(?:/)?$"
+    },
+    {
+      "page": "/[collection]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcollection": "nxtPcollection"
+      },
+      "namedRegex": "^/(?<nxtPcollection>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/debug",
+      "regex": "^/api/debug(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/debug(?:/)?$"
+    },
+    {
+      "page": "/api/search",
+      "regex": "^/api/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/search(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/opengraph-image.png",
+      "regex": "^/opengraph\\-image\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/opengraph\\-image\\.png(?:/)?$"
+    },
+    {
+      "page": "/order",
+      "regex": "^/order(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/order(?:/)?$"
+    },
+    {
+      "page": "/order-history",
+      "regex": "^/order\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/order\\-history(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/scan",
+      "regex": "^/scan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/scan(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

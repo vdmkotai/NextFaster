@@ -1,0 +1,3 @@
+module.exports=[66373,a=>{"use strict";a.i(70396);var b=a.i(73727),c=a.i(84293);async function d({params:a}){let{category:d}=await a,e=decodeURIComponent(d),f=await (0,c.getCategory)(e);if(!f)return(0,b.notFound)();let g=f.subcollections.slice(0,2).map(a=>a.name).join(", ").toLowerCase();return{title:`${f.name}`,openGraph:{title:`${f.name}`,description:`Choose from our selection of ${f.name.toLowerCase()}, including ${g+(f.subcollections.length>1?",":"")} and more. In stock and ready to ship.`}}}function e({children:a}){return a}a.s(["default",()=>e,"generateMetadata",()=>d])}];
+
+//# sourceMappingURL=src_app_%28category-sidebar%29_products_%5Bcategory%5D_layout_tsx_f8fb6425._.js.map

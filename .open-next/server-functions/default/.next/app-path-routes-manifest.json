@@ -1,0 +1,21 @@
+{
+  "/(category-sidebar)/[collection]/page": "/[collection]",
+  "/(category-sidebar)/page": "/",
+  "/(category-sidebar)/products/[category]/[subcategory]/[product]/opengraph-image-154diq/route": "/products/[category]/[subcategory]/[product]/opengraph-image-154diq",
+  "/(category-sidebar)/products/[category]/[subcategory]/[product]/page": "/products/[category]/[subcategory]/[product]",
+  "/(category-sidebar)/products/[category]/[subcategory]/opengraph-image-b3umn5/route": "/products/[category]/[subcategory]/opengraph-image-b3umn5",
+  "/(category-sidebar)/products/[category]/[subcategory]/page": "/products/[category]/[subcategory]",
+  "/(category-sidebar)/products/[category]/opengraph-image-1kbeev/route": "/products/[category]/opengraph-image-1kbeev",
+  "/(category-sidebar)/products/[category]/page": "/products/[category]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/debug/route": "/api/debug",
+  "/api/prefetch-images/[...rest]/route": "/api/prefetch-images/[...rest]",
+  "/api/search/route": "/api/search",
+  "/favicon.ico/route": "/favicon.ico",
+  "/opengraph-image.png/route": "/opengraph-image.png",
+  "/order-history/page": "/order-history",
+  "/order/page": "/order",
+  "/robots.txt/route": "/robots.txt",
+  "/scan/page": "/scan"
+}

@@ -1,0 +1,43 @@
+{
+  "app": {
+    "[project]/src/app/(category-sidebar)/[collection]/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/(category-sidebar)/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/(category-sidebar)/products/[category]/[subcategory]/[product]/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/(category-sidebar)/products/[category]/[subcategory]/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/(category-sidebar)/products/[category]/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/order-history/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/order/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ],
+    "[project]/src/app/scan/page": [
+      "static/media/Geist_Variable-s.p.70416cc0.woff2",
+      "static/media/GeistMono_Variable.p.f130cd20.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

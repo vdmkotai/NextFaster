@@ -1,0 +1,3 @@
+module.exports=[94134,a=>{"use strict";a.i(7997),a.i(99475),a.i(70396),a.i(73727),a.i(84293);var b=a.i(52425);let c={alt:"About the subcategory",contentType:"image/png",runtime:"edge",size:{width:1200,height:630}};async function d(a){let{__metadata_id__:d,...e}=await a.params,f=(0,b.fillMetadataSegment)("/(category-sidebar)/products/[category]/[subcategory]",e,"opengraph-image");return[function(a,b){let c={alt:a.alt,type:a.contentType||"image/png",url:f+"?868ff02b1d31a457"},{size:d}=a;return d&&(c.width=d.width,c.height=d.height),c}(c,0)]}a.s(["default",0,d],94134)}];
+
+//# sourceMappingURL=fe1b0_products_%5Bcategory%5D_%5Bsubcategory%5D_opengraph-image--metadata_d3397ba8.js.map

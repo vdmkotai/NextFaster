@@ -1,0 +1,21 @@
+{
+  "/(category-sidebar)/[collection]/page": "app/(category-sidebar)/[collection]/page.js",
+  "/(category-sidebar)/page": "app/(category-sidebar)/page.js",
+  "/(category-sidebar)/products/[category]/[subcategory]/[product]/opengraph-image-154diq/route": "app-edge-has-no-entrypoint",
+  "/(category-sidebar)/products/[category]/[subcategory]/[product]/page": "app/(category-sidebar)/products/[category]/[subcategory]/[product]/page.js",
+  "/(category-sidebar)/products/[category]/[subcategory]/opengraph-image-b3umn5/route": "app-edge-has-no-entrypoint",
+  "/(category-sidebar)/products/[category]/[subcategory]/page": "app/(category-sidebar)/products/[category]/[subcategory]/page.js",
+  "/(category-sidebar)/products/[category]/opengraph-image-1kbeev/route": "app-edge-has-no-entrypoint",
+  "/(category-sidebar)/products/[category]/page": "app/(category-sidebar)/products/[category]/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/debug/route": "app/api/debug/route.js",
+  "/api/prefetch-images/[...rest]/route": "app/api/prefetch-images/[...rest]/route.js",
+  "/api/search/route": "app/api/search/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/opengraph-image.png/route": "app/opengraph-image.png/route.js",
+  "/order-history/page": "app/order-history/page.js",
+  "/order/page": "app/order/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/scan/page": "app/scan/page.js"
+}

@@ -1,0 +1,3 @@
+module.exports=[55342,a=>{"use strict";var b=a.i(87924),c=a.i(38246);function d(){return(0,b.jsxs)("div",{className:"flex h-screen flex-col items-center justify-center",children:[(0,b.jsx)("p",{className:"mb-4 text-lg",children:"React Scan has loaded, you can now start exploring the site"}),(0,b.jsx)(c.default,{href:"/",className:"text-blue-500 underline hover:text-blue-700",children:"Back to home"})]})}a.s(["default",()=>d],55342)}];
+
+//# sourceMappingURL=src_app_scan_page_tsx_cb1e2535._.js.map
