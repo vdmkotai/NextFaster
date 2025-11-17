@@ -16,9 +16,9 @@ function getHostname(request: NextRequest) {
     return process.env.VERCEL_BRANCH_URL;
   }
 
-  // Custom domain override (optional, works for any platform)
-  if (process.env.PUBLIC_URL) {
-    return process.env.PUBLIC_URL;
+  // Railway-specific (official variable from Railway docs)
+  if (process.env.RAILWAY_PUBLIC_DOMAIN) {
+    return process.env.RAILWAY_PUBLIC_DOMAIN;
   }
 
   // Universal fallback: get from request headers (works everywhere!)
