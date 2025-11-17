@@ -1,18 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Note: cacheComponents disabled for now due to build timeouts
+  // Enable this when ready to migrate to Cache Components mode
+  // cacheComponents: true,
+  reactCompiler: true,
   experimental: {
-    ppr: true,
     inlineCss: true,
-    reactCompiler: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     minimumCacheTTL: 31536000,
+    qualities: [65, 75, 80], // Added qualities used by images in the app
     remotePatterns: [
       {
         protocol: "https",
@@ -22,29 +22,6 @@ const nextConfig = {
         search: "",
       },
     ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/insights/vitals.js",
-        destination:
-          "https://cdn.vercel-insights.com/v1/speed-insights/script.js",
-      },
-      {
-        source: "/insights/events.js",
-        destination: "https://cdn.vercel-insights.com/v1/script.js",
-      },
-      {
-        source: "/hfi/events/:slug*",
-        destination:
-          "https://vitals.vercel-insights.com/v1/:slug*?dsn=KD0ni5HQVdxsHAF2tqBECObqH",
-      },
-      {
-        source: "/hfi/vitals",
-        destination:
-          "https://vitals.vercel-insights.com/v2/vitals?dsn=fsGnK5U2NRPzYx0Gch0g5w5PxT1",
-      },
-    ];
   },
 };
 
