@@ -3,22 +3,34 @@ import { parseHTML } from "linkedom";
 
 export const dynamic = "force-static";
 
-function getHostname() {
+function getHostname(request: NextRequest) {
   if (process.env.NODE_ENV === "development") {
     return "localhost:3000";
   }
-  if (process.env.VERCEL_ENV === "production") {
+
+  // Vercel-specific (check first for guaranteed Vercel compatibility)
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     return process.env.VERCEL_PROJECT_PRODUCTION_URL;
   }
-  return process.env.VERCEL_BRANCH_URL;
+  if (process.env.VERCEL_BRANCH_URL) {
+    return process.env.VERCEL_BRANCH_URL;
+  }
+
+  // Custom domain override (optional, works for any platform)
+  if (process.env.PUBLIC_URL) {
+    return process.env.PUBLIC_URL;
+  }
+
+  // Universal fallback: get from request headers (works everywhere!)
+  return request.headers.get("host") || "";
 }
 
 export async function GET(
-  _: NextRequest,
+  request: NextRequest,
   { params }: { params: { rest: string[] } },
 ) {
   const schema = process.env.NODE_ENV === "development" ? "http" : "https";
-  const host = getHostname();
+  const host = getHostname(request);
   if (!host) {
     return new Response("Failed to get hostname from env", { status: 500 });
   }
